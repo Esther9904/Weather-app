@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> WEATHER APP</title>
         <link rel="stylesheet" href="weather.css">
     </head>
     <body>
-        <input type="text" id="city" placeholder="Enter city">
-        <button onclick="getWeather()">Get weather</button>
+        <main class="dashboard">
+            <div class="weather-card">
+                <h2 class="city">Lagos</h2>
+                <div class="weather-info">
+                    <div class="temperature">29°C</div>
+                    <div class="condition">Mostly Sunny</div>
+                </div>
+            </div>
 
-        <div id="weather"></div>
+        </main>
+        
     </body>
     <script src="WeatherApi.js"></script>
 </html>
