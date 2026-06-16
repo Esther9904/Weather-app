@@ -18,9 +18,74 @@ body{
 
 .weather-card{
     height: 350px;
+    padding: 30px;
     border-radius: 30px;
     background: rgba(255,255, 255, 0.05);
     border: 1px solid rgba(255,255, 255, 0.1);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 25px rgba(0,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.temperature{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #7DF9FF;
+    text-shadow:
+         0 0 10px rgba(125,249,255,0.8),
+         0 0 20px rgba(125,249,255,0.5);
+}
+
+.city{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.condition{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.weather-icon{
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.metrics{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.metric-card{
+    flex: 1;
+    background:rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.metric-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+.metric-card h3{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.metric-card p{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
 }
