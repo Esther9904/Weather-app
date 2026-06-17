@@ -16,18 +16,67 @@ body{
     margin: 50px auto;
 }
 
+.dashboard-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.location-info h1{
+    color:white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.location-info p{
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+}
+
+.search-input{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(100,180,255,0.25);
+    border-radius: 15px;
+    padding: 12px 20px;
+    color:white;
+    outline:none;
+    width: 250px;
+    backdrop-filter: blur(10px);
+}
+.search-input:focus{
+    border-color: rgba(0,255,255,0.5);
+    box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
 .weather-card{
-    height: 350px;
+    min-height: 280px;
     padding: 30px;
     border-radius: 30px;
     background: rgba(255,255, 255, 0.05);
-    border: 1px solid rgba(255,255, 255, 0.1);
+    border: 1px solid rgba(100,180,255,0.25);
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 25px rgba(0,255,255,0.15);
+    /* box-shadow: 0 0 25px rgba(0,255,255,0.15); */
+    box-shadow: 0 0 30px rgba(0, 150,255,0.15),
+                0 0 60px rgba(180,0,255,0.1);
     display: flex;
     align-items:center;
     justify-content: space-between;
-    
+    position: relative;
+    overflow: hidden; 
+    transition: 0.3s;
+}
+.weather-card:hover{
+    transform: translateY(-5px);
+}
+.weather-card::before{
+    content: "";
+    position: absolute;
+    inset:0;
+    background: radial-gradient(circle at left,rgba(0,150,255,0.15), transparent 40%),
+                radial-gradient(circle at right, rgba(180,0,255,0.15), transparent 40%);
+    pointer-events:none;
 }
 .weather-center{
     display: flex;
@@ -50,16 +99,10 @@ body{
          0 0 20px rgba(0,255,255,0.15);
 }
 
-.city{
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
 .condition{
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
     margin-top: 10px;
 }
 
@@ -75,6 +118,8 @@ body{
     justify-content: space-between;
     color: white;
     font-size: 1.1rem;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .weather-icon{
@@ -113,6 +158,14 @@ body{
     color: white;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.forecast-section{
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(100,180,255,0.15);
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 30px;
 }
 
 .forecast-title{
