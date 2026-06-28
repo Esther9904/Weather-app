@@ -14,3 +14,13 @@
 //     <p>${data.current.temperature}</p>
 //     `;
 // }
+const temperature = document.querySelector(".temperature");
+
+setTimeout(() => {
+    temperature.classList.add("fade-out");
+}, 2000);
+
+setTimeout(() => {
+    temperature.textContent = "31°C";
+    temperature.classList.remove("fade-out");
+}, 2500);

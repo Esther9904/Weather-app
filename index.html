@@ -4,108 +4,125 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> WEATHER APP</title>
+        <script src="https://unpkg.com/lucide@latest"></script>
         <link rel="stylesheet" href="weather.css">
     </head>
     <body>
-        <main class="dashboard">
-            <div class="dashboard-header">
-                <div class="location-info">
-                    <h1>LAGOS, NIGERIA</h1>
-                    <p>Friday, 17 May 2024</p>
-                </div>
-                <div class="search-container">
-                    <input
-                       type="text"
-                       class="search-input"
-                       placeholder="Search location..."
-                    >
-                </div>
-            </div>
-            <div class="weather-card">
-                <div class="weather-left">
-                    <div class="weather-icon">☀️</div>
-                </div>
-                
-                <div class="weather-center">
-                    <div class="weather-label">
-                        CURRENT WEATHER
+        <div class="app">
+            <aside class="sidebar">
+                <div class="logo">☁️</div>
+                <nav>
+                    <div class="nav-icon active">🏠</div>
+                    <div class="nav-icon">📊</div>
+                    <div class="nav-icon">📍</div>
+                    <div class="nav-icon">⚙️</div>
+                </nav>
+            </aside>
+            
+            <main class="dashboard">
+                <div class="dashboard-header">
+                    <div class="location-info">
+                        <h1 class="city">LAGOS, NIGERIA</h1>
+                        <p>Friday, 17 May 2024</p>
                     </div>
-                    <div class="temperature">29°C</div>
-                    <div class="condition">Mostly Sunny</div>
-                </div>
-
-                <div class="weather-right">
-                    <div class="weather-stat">
-                        <span>Humidity</span>
-                        <span>82%</span>
-                    </div>
-                    <div class="weather-stat">
-                         <span>Wind speed</span>
-                         <span>14km/h</span>
-                    </div>
-                    <div class="weather-stat">
-                         <span>Pressure</span>
-                         <span>1012 hpa</span>
-                    </div>
-                    <div class="weather-stat">
-                         <span>Visibility</span>
-                         <span>10km</span>
+                    <div class="search-container">
+                        <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search location..."
+                        >
                     </div>
                 </div>
-            </div>
-            <div class="metrics">
-                <div class="metric-card">
-                    <h3>Humidity</h3>
-                    <p>82%</p>
-                </div>
-                
-                <div class="metric-card">
-                    <h3>Wind Speed</h3>
-                    <p>14 km/h</p>
-                </div>
-
-                <div class="metric-card">
-                    <h3>Feels Like</h3>
-                    <p>31°</p>
-                </div>
-            </div>
-            <div class="forecast-section">
-                <h2 class="forecast-title">5-Day Forecast</h2>
-                <div class="forecast">
-                    <div class="forecast-card">
-                        <h3>Mon</h3>
-                        <div class="forecast-icon">☀️</div>
-                        <p>31°</p>
-                    </div>
-
-                    <div class="forecast-card">
-                        <h3>Tue</h3>
-                        <div class="forecast-icon">⛅</div>
-                        <p>29°</p>
-                    </div>
-
-                    <div class="forecast-card">
-                        <h3>Wed</h3>
-                        <div class="forecast-icon">🌧️</div>
-                        <p>26°</p>
-                    </div>
-
-                    <div class="forecast-card">
-                        <h3>Thur</h3>
-                        <div class="forecast-icon">☀️</div>
-                        <p>30°</p>
-                    </div>
-
-                    <div class="forecast-card">
-                        <h3>Fri</h3>
-                        <div class="forecast-icon">☀️</div>
-                        <p>32°</p>
+                <div class="weather-card">
+                    <div class="weather-left">
+                        <div class="weather-icon">
+                            <i data-lucide="sun"></i>
+                        </div>
                     </div>
                     
+                    <div class="weather-center">
+                        <div class="weather-label">
+                            CURRENT WEATHER
+                        </div>
+                        <div class="temperature">29°C</div>
+                        <div class="condition">Mostly Sunny</div>
+                    </div>
+
+                    <div class="weather-right">
+                        <div class="weather-stat">
+                            <span>Humidity</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="weather-stat">
+                            <span>Wind speed</span>
+                            <span>14km/h</span>
+                        </div>
+                        <div class="weather-stat">
+                            <span>Pressure</span>
+                            <span>1012 hpa</span>
+                        </div>
+                        <div class="weather-stat">
+                            <span>Visibility</span>
+                            <span>10km</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </main>
-        
+                <div class="metrics">
+                    <div class="metric-card">
+                        <h3>Humidity</h3>
+                        <p>82%</p>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <h3>Wind Speed</h3>
+                        <p>14 km/h</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <h3>Feels Like</h3>
+                        <p>31°</p>
+                    </div>
+                </div>
+                <div class="forecast-section">
+                    <h2 class="forecast-title">5-Day Forecast</h2>
+                    <div class="forecast">
+                        <div class="forecast-card">
+                            <h3>Mon</h3>
+                            <div class="forecast-icon">☀️</div>
+                            <p>31°</p>
+                        </div>
+
+                        <div class="forecast-card">
+                            <h3>Tue</h3>
+                            <div class="forecast-icon">⛅</div>
+                            <p>29°</p>
+                        </div>
+
+                        <div class="forecast-card">
+                            <h3>Wed</h3>
+                            <div class="forecast-icon">🌧️</div>
+                            <p>26°</p>
+                        </div>
+
+                        <div class="forecast-card">
+                            <h3>Thur</h3>
+                            <div class="forecast-icon">☀️</div>
+                            <p>30°</p>
+                        </div>
+
+                        <div class="forecast-card">
+                            <h3>Fri</h3>
+                            <div class="forecast-icon">☀️</div>
+                            <p>32°</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script>
+            lucide.createIcons();
+        </script>
+        <script src="WeatherApi.js"></script>
     </body>
-    <script src="WeatherApi.js"></script>
 </html>
