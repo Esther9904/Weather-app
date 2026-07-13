@@ -243,6 +243,10 @@ body{
     font-size: 2rem;
     font-weight: bold;
 }
+.metric-card svg{
+    stroke: #7dd3fc;
+    stroke-width: 2.5;
+}
 
 .forecast-section{
     background: rgba(255,255,255,0.04);
@@ -288,6 +292,10 @@ body{
 .forecast-card h3{
     color: white;
     margin-bottom: 10px;
+}
+.forecast-card svg{
+    stroke: #7dd3fc;
+    stroke-width: 2.5;
 }
 .forecast-card p{
     color: white;
